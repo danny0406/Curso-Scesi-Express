@@ -4,6 +4,7 @@ require('dotenv').config();
 
 const route_healthy = require('./routes/healthy.routes');
 const route_product = require('./routes/products.routes');
+const route_user = require('./routes/users.routes');
 
 const app = express();
 
@@ -24,7 +25,7 @@ app.use("/", route_healthy);
 
 app.use("/products", route_product);
 
-
+app.use("/users", route_user);
 
 
 
